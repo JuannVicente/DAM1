@@ -1,0 +1,281 @@
+.logoAsimovFans {
+  margin-top: 10px;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-bottom: 25px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+}
+
+
+body {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: white !important;
+  color: #b3e0f2;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.imagen {
+  width: 100%;
+  height: calc(100vh - 150px - 146px);
+  min-height: 38rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+
+.menu {
+  border-bottom: solid #306291;
+}
+
+.menu ul {
+  margin-left: 125px;
+  margin-right: 100;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+  font-size: inherit;
+}
+
+
+
+.menu li {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.menu a {
+  font-style: none;
+  position: relative;
+  display: block;
+  padding: 5px;
+  color: #4682b4;
+  text-decoration: none;
+}
+
+.menu a::before {
+  list-style: none;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+  list-style: none;
+  transform: scaleX(1);
+}
+
+.menu[data-animation="to-left"] a::before {
+  transform-origin: right;
+}
+
+.menu[data-animation="center"] a::before {
+  /***** Bibliografia del a:hover: https://webdesign.tutsplus.com/es/how-to-create-different-css-hover-effects-from-scratch--cms-34222t *****/
+
+  transform-origin: center;
+}
+
+.menu[data-animation="bonus"] a::before {
+  transform-origin: right;
+}
+
+.menu[data-animation="bonus"] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+
+.contenedor-imagen {
+  background-image: url('../material_Trabajo2/images/fonsrobot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 60vh;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .contenedor-imagen img {
+    width: 100%;
+    height: 100%; /* Esto asegura que la proporción de aspecto se mantenga */
+.full-width {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: calc(100vh - 140px);
+  object-position: bottom;
+  /* Ajuste para recortar desde la parte inferior */
+}
+
+.card h1 {
+  text-align: center;
+  color: #4d7fad;
+  font-size: 44px;
+  margin-bottom: 50px;
+
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  margin-top: 10;
+
+  margin-top: 0;
+}
+
+.custom-card {
+  transition: 0.3s ease-in-out;
+  border: 1px solid #1a237e;
+}
+
+.custom-card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  border-color: #4682b4;
+  transform: translateY(-3%);
+}
+
+.card {
+
+  flex-direction: column;
+  margin-right: 4.2%;
+  margin-left: 5.0%;
+
+}
+
+.container2 {
+  padding-top: 2.2vh;
+  width: 100%;
+  border-bottom: solid;
+  border-color: #306291;
+  background-color: #b3e0f2;
+
+
+}
+
+h1 {
+  margin-top: 10%;
+  margin-left: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.texto {
+  margin-top: 10px;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+
+
+}
+
+.texto p {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  border-style: solid;
+  border-color: #4682b4;
+  background-color: #b3e0f2;
+  padding: 1%;
+}
+
+.container3 {
+  width: 34%;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #4682b4;
+  background-color: #b3e0f2;
+  padding: 1%;
+  margin-bottom: 1.5%;
+}
+
+.leyes {
+  font-family: 'Petit Formal Script', cursive;
+
+}
+
+footer {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  height: 140px;
+  border-top: 6px solid transparent;
+  border-image: linear-gradient(to right, #afd8fb, #306291);
+  border-image-slice: 1;
+  padding-top: 20px;
+  color: #666666;
+  background-color: rgba(69, 141, 209, 0.2);
+  margin-top: auto;
+}
+
+.tabla {
+
+  margin-top: 5%;
+  padding-bottom: 15%;
+  border-radius: 5px;
+  border-color: #4682b4;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+table {
+  text-align: center;
+}
+
+table th {
+
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+table td {
+  font-family: 'Roboto', sans-serif;
+}
+
+.enviar-button-container {
+  margin-top: 20px;
+}
+
+/* .list-group-item:hover{
+  background-color: gray;
+} */
